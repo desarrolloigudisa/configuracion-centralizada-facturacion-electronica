@@ -1,25 +1,17 @@
 server:
-  port: 8076
-springdoc:
-  packages-to-scan: com.righttek.es.empresa.controller
-  pathsToMatch: /v1, /api/es/empresa/**
-
-# CONECCION A BASE DE DATOS
+  port: 8024
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/gotest
+    url: jdbc:postgresql://10.35.3.251:5432/facturacion_dev
     username: postgres
-    password: root
+    password: postgres
     driver-class-name: org.postgresql.Driver
-# Hibernate ddl auto (create, create-drop, validate, update)
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: false
+    show-sql: true
     properties:
       jdbc:
         lob:
-          non_contextual_creation: true
-# SERVICIOS A CONSUMIR
-uri:
-  nomina-externa: "http://localhost:8082"
+         non_contextual_creational: true
+
