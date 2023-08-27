@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+# CONECCION A BASE DE DATOS
+spring:
+  datasource:
+    url: jdbc:sqlserver://10.35.2.43\MSSQLSERVER1;databaseName=gotalentRTNewProducPre
+    username: Arquitectos
+    password: P@ssw0rd1
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+# Hibernate ddl auto (create, create-drop, validate, update)
+  hibernate:
+    dialect: org.hibernate.dialect.MySQLInnoDBDialect
+
+# SERVICIOS A CONSUMIR
+
+uri:
+  legado: "http://10.35.2.43:8005"  
+  
+
+
+
+# SERVICIOS A CONSUMIR

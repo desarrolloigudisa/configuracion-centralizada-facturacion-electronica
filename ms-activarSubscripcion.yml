@@ -1,0 +1,25 @@
+server:
+  port: 8101
+spring:
+  jackson:
+    date-format: com.righttek.ms.activarsubscripcion.RFC3339DateFormat
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+# SERVICIOS A CONSUMIR
+uri:
+  subscripcionComercialEs: "http://localhost:8054"
+  planComercialEs: "http://localhost:8075"
+  empresaEs: "http://localhost:8076"
+  pagoEs: "http://localhost:8078"
+  plantillaNotificacionEs: "http://localhost:8079"
+  usuarioEs: "http://localhost:8055"
+  valoresConfigurables: "http://localhost:8051"
+  caracteristicasSubscripcionEs: "http://localhost:8050"
+  EnviarCorreoUS: "http://localhost:8083"
+  planComercialES: "http://localhost:8075"
+  CaracteristicaSistemaPerfilES: "http://localhost:8067"
+  ModuloES: "http://localhost:8069"
+  PerfilES: "http://localhost:8066"
+  RolES: "http://localhost:8063"
+  UsuarioES: "http://localhost:8055"
+  horarioEmpleadoES: "http://localhost:8056"

@@ -1,0 +1,12 @@
+server:
+  port: 8214
+  
+# SERVICIOS A CONSUMIR
+uri:
+  plantillaNotificacion: "http://localhost:8079"
+  empleadolegado: "http://localhost:8072"
+  reembolso: "http://localhost:8005"
+  sreembolso: "http://localhost:8006"
+#  srlegado: "http://localhost:8062"
+  ecorreo: "http://localhost:8083"
+  solicitudlegado: "http://localhost:8085"

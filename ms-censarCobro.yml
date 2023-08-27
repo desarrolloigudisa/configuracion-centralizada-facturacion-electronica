@@ -1,0 +1,21 @@
+server:
+  port: 8044
+  servlet:
+    contextPath: /
+spring:
+  jackson:
+    date-format: com.righttek.ms.censarcobro.RFC3339DateFormat
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+springfox:
+  documentation:
+    open-api:
+      v3:
+        path: /api-docs
+
+# URI DE LOS SERVICIOS CONSUMIDOS
+
+uri:
+   PagoUS: 'http://localhost:8080'
+   PagoES: 'http://localhost:8078'
+   ActivarSubscripcionMS: 'http://localhost:8101'

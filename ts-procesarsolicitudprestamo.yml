@@ -1,0 +1,11 @@
+server:
+  port: 8210
+  
+uri:
+    es-empleado: http://localhost:8072
+    es-solicitudprestamo: http://localhost:8062
+    es-plantillanotificaciones: http://localhost:8075
+    us-nominaexterna: http://localhost:8082
+    us-solicitudlegado: http://localhost:8085
+    us-enviarcorreo: http://localhost:8889
+    

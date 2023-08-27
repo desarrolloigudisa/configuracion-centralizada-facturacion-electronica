@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /
+spring:
+  jackson:
+    date-format: com.righttek.es.resultadoevaluacion.RFC3339DateFormat
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+springfox:
+  documentation:
+    open-api:
+      v3:
+        path: /api-docs
+        
+# CONECCION A BASE DE DATOS
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/evaluacion
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+# Hibernate ddl auto (create, create-drop, validate, update)
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      jdbc:
+        lob:
+          non_contextual_creation: true

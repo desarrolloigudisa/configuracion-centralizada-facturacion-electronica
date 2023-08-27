@@ -1,0 +1,17 @@
+server:
+  port: 8094
+
+# ESPECIFICACIONES DE KAFKA
+# ESPECIFICACIONES DE KAFKA
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: myGroup
+
+
+# SERVICIOS A CONSUMIR
+uri:
+  nomina-externa: "http://localhost:8082"
+  esfuerzo-laboral: "http://localhost:8073"
+  marcacion: "http://localhost:8071"

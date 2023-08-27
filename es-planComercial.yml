@@ -1,0 +1,25 @@
+server:
+  port: 8075
+springdoc:
+  packages-to-scan: com.righttek.es.plancomercial.controller
+  pathsToMatch: /v1, /api/es/planComercial/**
+
+# CONECCION A BASE DE DATOS
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gotest
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+# Hibernate ddl auto (create, create-drop, validate, update)
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      jdbc:
+        lob:
+          non_contextual_creation: true
+# SERVICIOS A CONSUMIR
+uri:
+ precioES: 'http://localhost:8003'

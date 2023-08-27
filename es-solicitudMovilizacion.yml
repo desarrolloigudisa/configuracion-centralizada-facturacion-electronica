@@ -1,0 +1,28 @@
+server:
+  port: 8010
+
+# CONEXION A BASE DE DATOS
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+# Hibernate ddl auto (create, create-drop, validate, update)
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      jdbc:
+        lob:
+          non_contextual_creation: true
+ # ESPECIFICACIONES DE KAFKA
+  kafka:
+    bootstrap-servers: 10.35.2.65:9092
+    consumer:
+      group-id: myGroup
+
+# TOPICO DE MENSAJERIA
+topic:
+   name: "TopicbitacoraSolicitud" 

@@ -1,0 +1,24 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: es-comprobante
+  datasource:
+    url: jdbc:postgresql://181.188.224.250:35432/facturacion_dev
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      jdbc:
+        lob:
+         non_contextual_creational: true
+  management:
+   security:
+      enabled: false
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"

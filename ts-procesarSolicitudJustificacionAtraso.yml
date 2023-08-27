@@ -1,0 +1,10 @@
+server:
+  port: 8212
+  
+# SERVICIOS A CONSUMIR
+uri:
+  empleado: "http://localhost:8072"
+  nominaExterna: "http://localhost:8082"
+  plantillaNotificacion: "http://localhost:8079"
+  solicitudJustificacionAtraso: "http://localhost:8059"
+  enviarCorreo: "http://localhost:8083"

@@ -1,0 +1,11 @@
+server:
+  port: 8211
+  
+# SERVICIOS A CONSUMIR
+uri:
+  empleado: "http://localhost:8072"
+  cargaArchivo: "http://localhost:8081"
+  valoresConfigurables: "http://localhost:8051"
+  plantillaNotificacion: "http://localhost:8079"
+  solicitudJustificacionAtraso: "http://localhost:8059"
+  us-enviarCorreo: "http://localhost:8083"

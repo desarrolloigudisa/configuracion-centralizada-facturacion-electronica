@@ -1,0 +1,9 @@
+server:
+  port: 8081
+PARAMETRO:
+  SFTPHOST : "localhost"
+  SFTPPASS : "CJvallejo.$2020"
+  SFTPPORT : "22"
+  SFTPUSER : "jvallejo"
+
+

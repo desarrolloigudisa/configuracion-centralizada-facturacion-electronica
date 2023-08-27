@@ -1,0 +1,19 @@
+server:
+  port: 8052
+  
+# CONECCION A BASE DE DATOS
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gotest
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+## Hibernate ddl auto (create, create-drop, validate, update)
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      jdbc:
+        lob:
+          non_contextual_creation: true

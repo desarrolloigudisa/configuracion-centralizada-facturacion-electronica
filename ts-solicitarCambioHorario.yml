@@ -1,0 +1,10 @@
+server:
+  port: 8202
+  
+# SERVICIOS A CONSUMIR
+uri:
+  plantillaNotificacion: "http://localhost:8079"
+  solicitud: "http://localhost:8059"
+  cargaArchivo: "http://localhost:8081"
+  Parametros: "http://localhost:8051"
+  us-enviarcorreo: "http://localhost:8083"

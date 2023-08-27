@@ -1,0 +1,9 @@
+server:
+  port: 7003
+
+uri:
+  es-intentoslogin: http://localhost:7001
+  es-usuario: http://localhost:7002
+  es-valoresconfigurables: http://localhost:7000
+  
+  

@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /
+spring:
+  jackson:
+    date-format: com.righttek.us.pago.RFC3339DateFormat
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+springfox:
+  documentation:
+    open-api:
+      v3:
+        path: /api-docs
+  
+paypal:
+  account-paypal: 'sb-psus81254190@business.example.com'
+  client-id: 'AexEbOaPkqPIwgThanukpCRs7dXdpbR0fADIU-Jk7G67ptK_CJCpgvhFgmMtGd9kw71CGufk0IOwq2bF'
+  client-secrect: 'ELJ6GrkWm9lALqOGsvJYE1YhMSX8u7dVdnmB9iFn9ep6zpG_6Kf558-PupekFTAXuB1FJL4axODk2wgh'
+  mode: 'sandbox'
+  
+uri:
+ sandbox: 'https://api-m.sandbox.paypal.com'

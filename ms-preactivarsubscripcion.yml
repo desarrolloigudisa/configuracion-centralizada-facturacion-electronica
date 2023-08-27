@@ -1,0 +1,6 @@
+server:
+  port: 4545
+
+uri:
+   es-pago: "http://localhost:8078"
+   es-subscripcioncomercial: "http://localhost:8054"
