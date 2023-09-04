@@ -4,7 +4,7 @@ spring:
   application:
     name: es-comprobante
   datasource:
-    url: jdbc:postgresql://10.35.3.251:5432/facturacion_dev
+    url: jdbc:postgresql://10.35.3.251:5432/facturacion_dev # 181.188.224.250:35432/facturacion_dev antigua ip
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
