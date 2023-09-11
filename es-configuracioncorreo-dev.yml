@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: es-cliente
+    name: es-comprobante
   datasource:
     url: ${SERVER_POSTGRES} 
     username: ${USER_SERVER_POSTGRES}
