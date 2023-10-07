@@ -4,7 +4,6 @@ spring:
   application:
     name: ms-notificarcomprobanteprocesado
   main:
-    sources: 256m
     max-heap-size: 512m   
   datasource:
     url: jdbc:postgresql://10.35.2.46:3100/BillingAppDB
