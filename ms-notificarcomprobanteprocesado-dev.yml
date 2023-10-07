@@ -22,5 +22,8 @@ spring:
         lob:
          non_contextual_creational: true
 logging:
+  file: ms-notificarcomprobanteprocesado.log  # Nombre del archivo
+  path: .   # Directorio de logs (punto indica la carpeta actual, es decir, la raíz del proyecto)
+  file-name-format: ${logging.path}/${logging.file:-ms-notificarcomprobanteprocesado}.%d{yyyy-MM-dd}.log
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
